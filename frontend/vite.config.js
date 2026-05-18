@@ -3,15 +3,18 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
     plugins: [react()],
-    base: '/static/', // Matches Django's STATIC_URL
+    base: '/static/',
     build: {
-        manifest: true, // Crucial: django-vite needs this!
+        manifest: 'manifest.json',
         outDir: 'dist',
+        emptyOutDir: true,
         rollupOptions: {
-            input: 'src/main.jsx', // Entry point
+            input: {
+                main: 'src/main.jsx',
+            },
         },
     },
     server: {
-        origin: 'http://localhost:5173', // Essential for HMR
+        origin: 'http://localhost:5173',
     },
 })
