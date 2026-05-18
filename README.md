@@ -47,8 +47,8 @@ project/
 ## 1. Clone Project
 
 ```bash
-git clone <repo-url>
-cd <project-name>
+git clone https://github.com/balibabu/my-django-template.git
+cd my-django-template
 ```
 
 ---
