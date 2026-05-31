@@ -50,7 +50,7 @@ project/
 git clone https://github.com/balibabu/my-django-template.git
 cd my-django-template
 ```
-
+*rename env to .env and change the values inside it*
 ---
 
 ## 2. Create Virtual Environment
